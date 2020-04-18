@@ -393,10 +393,17 @@
     var hours = minutes * 60;
     var days = hours * 24;
     var years = days * 365;
+     
+    
+      var blogOpenDate;
+      if (openOnPC) {      
+        blogOpenDate = "2020-04-13 13:00:00 +0900";
+      } else {
+        blogOpenDate = "2020/04/13 13:00:00 +0900";   
+      }
+      start = new Date(blogOpenDate);
+    
 
-    
-      start = new Date("2020-04-13 13:00:00 +0900");
-    
     var now = new Date();
     var year = now.getFullYear();
     var month = now.getMonth() + 1;
@@ -411,11 +418,11 @@
     var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
     var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
     var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
-
+start
     if (openOnPC) {
       document.getElementById("runtime").innerHTML = "已经运行了: " + diffYears + " years " + diffDays + " days " + diffHours + " hours " + diffMinutes + " mins " + diffSeconds + " secs";
     } else {
-      document.getElementById("runtime").innerHTML = "已经运行了: " + diffYears + "y " + diffDays + "d " + diffHours + "h " + diffMinutes + "m " + diffSeconds + "s";
+      document.getElementById("runtime").innerHTML = "已经运行了: " + diffYears + " y " + diffDays + " d " + diffHours + " h " + diffMinutes + " m " + diffSeconds + " s";
     }
   }
 
