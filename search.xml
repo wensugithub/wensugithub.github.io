@@ -6,7 +6,9 @@
     <content><![CDATA[<ol>
 <li>认证一般如何设计和实现的？从性能方面考虑，不应该每次都访问DB</li>
 </ol>
-<p>2. </p>
+<ol start="2">
+<li>如果采用Token，Token里一般都存放什么样的信息</li>
+</ol>
 ]]></content>
       <categories>
         <category>Java</category>
