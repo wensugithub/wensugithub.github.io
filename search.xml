@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Java面试集锦</title>
+    <url>/2020/12/01/interview/</url>
+    <content><![CDATA[<ol>
+<li>认证一般如何设计和实现的？从性能方面考虑，不应该每次都访问DB</li>
+</ol>
+<p>2. </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jeecg技术积累</title>
+    <url>/2020/04/13/jeecg/</url>
+    <content><![CDATA[<h1 id="前端相关"><a href="#前端相关" class="headerlink" title="前端相关"></a>前端相关</h1><ol>
+<li><p>require相关知识<br><strong>require</strong>方法用于加载模块。<br>JS中，一个模块加载另一个模块有两套规范：<br><strong>CommonJS规范：</strong> Node.js(模块文件一般都已经存在于本地硬盘，所以加载起来比较快，不用考虑非同步加载的方式)<br><strong>AMD规范：</strong>　浏览器(非同步加载模块，允许指定回调函数)</p>
+<p>参考：<a href="https://javascript.ruanyifeng.com/nodejs/module.html#toc5" target="_blank" rel="noopener">阮一峰-require</a>.</p>
+<a id="more"></a>
+
+</li>
+</ol>
+<h1 id="后端相关"><a href="#后端相关" class="headerlink" title="后端相关"></a>后端相关</h1>]]></content>
+      <categories>
+        <category>jeecg</category>
+        <category>技术累积</category>
+      </categories>
+      <tags>
+        <tag>jeecg</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>article</title>
+    <url>/2020/04/10/article/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/04/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+</search>
