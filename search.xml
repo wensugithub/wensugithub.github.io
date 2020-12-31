@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>日常工作积累</title>
+    <url>/2020/12/31/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%A7%AF%E7%B4%AF/</url>
+    <content><![CDATA[<ol>
+<li>关于MySQL Connector/J的别名问题<ul>
+<li>ab AS  a_b在5.1以后取出的是ab</li>
+<li><a href="https://bugs.mysql.com/bug.php?id=40256" target="_blank" rel="noopener">mysql_bugs</a></li>
+<li><a href="https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-installing-upgrading-5-1.html" target="_blank" rel="noopener">MySQL Connector/J 5.1.x</a></li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>DB</category>
+        <category>Mysql</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Java面试集锦</title>
     <url>/2020/12/01/interview/</url>
     <content><![CDATA[<ol>
@@ -9,64 +26,28 @@
 <ol start="2">
 <li>如果采用Token，Token里一般都存放什么样的信息</li>
 </ol>
+<ol start="3">
+<li>mave管理项目常用命令</li>
+</ol>
+<ol start="4">
+<li>java list去除重复元素</li>
+</ol>
+<ol start="5">
+<li>Linux修改文件权限命令</li>
+</ol>
+<ol start="6">
+<li>package.json的作用</li>
+</ol>
+<ol start="7">
+<li>jvm编译 自定义一个java.lang.String可以编译并运行么</li>
+</ol>
+<ol start="8">
+<li>java Lamdar表达式的好处</li>
+</ol>
 ]]></content>
       <categories>
         <category>Java</category>
+        <category>面试</category>
       </categories>
-  </entry>
-  <entry>
-    <title>jeecg技术积累</title>
-    <url>/2020/04/13/jeecg/</url>
-    <content><![CDATA[<h1 id="前端相关"><a href="#前端相关" class="headerlink" title="前端相关"></a>前端相关</h1><ol>
-<li><p>require相关知识<br><strong>require</strong>方法用于加载模块。<br>JS中，一个模块加载另一个模块有两套规范：<br><strong>CommonJS规范：</strong> Node.js(模块文件一般都已经存在于本地硬盘，所以加载起来比较快，不用考虑非同步加载的方式)<br><strong>AMD规范：</strong>　浏览器(非同步加载模块，允许指定回调函数)</p>
-<p>参考：<a href="https://javascript.ruanyifeng.com/nodejs/module.html#toc5" target="_blank" rel="noopener">阮一峰-require</a>.</p>
-<a id="more"></a>
-
-</li>
-</ol>
-<h1 id="后端相关"><a href="#后端相关" class="headerlink" title="后端相关"></a>后端相关</h1>]]></content>
-      <categories>
-        <category>jeecg</category>
-        <category>技术累积</category>
-      </categories>
-      <tags>
-        <tag>jeecg</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>article</title>
-    <url>/2020/04/10/article/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/04/09/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-      </tags>
   </entry>
 </search>
