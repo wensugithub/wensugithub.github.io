@@ -23,18 +23,20 @@
   </script>
 
 
-  <meta name="description" content="wensugithub">
-<meta property="og:type" content="website">
-<meta property="og:title" content="携子之手,与子偕老">
-<meta property="og:url" content="https://wensugithub.github.io/categories/Java/index.html">
+  <meta name="description" content="数组结构和算法，和语言是无关的   底层数组特点  数组中必须存放相同类型数据 申请数组的内存空间时，必须指定数组大小   影响数组性能的要素  数组扩容 元素位移   数组扩容  numA:16 ➡ 18 此时底层会申请一个新的，长度扩大1倍的数组  numB:32 [] 将numA中的数据一个个拷贝到numB, 再依次添加17,18 将numA的内存释放(free)掉 java中ArrayL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组">
+<meta property="og:url" content="https://wensugithub.github.io/2021/01/17/dataStructure/index.html">
 <meta property="og:site_name" content="携子之手,与子偕老">
-<meta property="og:description" content="wensugithub">
+<meta property="og:description" content="数组结构和算法，和语言是无关的   底层数组特点  数组中必须存放相同类型数据 申请数组的内存空间时，必须指定数组大小   影响数组性能的要素  数组扩容 元素位移   数组扩容  numA:16 ➡ 18 此时底层会申请一个新的，长度扩大1倍的数组  numB:32 [] 将numA中的数据一个个拷贝到numB, 再依次添加17,18 将numA的内存释放(free)掉 java中ArrayL">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-01-17T03:35:57.000Z">
+<meta property="article:modified_time" content="2021-01-17T05:13:54.069Z">
 <meta property="article:author" content="Wen Su">
 <meta property="article:tag" content="wensu">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://wensugithub.github.io/categories/Java/">
+<link rel="canonical" href="https://wensugithub.github.io/2021/01/17/dataStructure/">
 
 
 <script id="page-configurations">
@@ -42,12 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: Java | 携子之手,与子偕老</title>
+  <title>数组 | 携子之手,与子偕老</title>
   
 
 
@@ -192,57 +194,170 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Java
-          <small>分类</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wensugithub.github.io/2021/01/17/dataStructure/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/head.jpg">
+      <meta itemprop="name" content="Wen Su">
+      <meta itemprop="description" content="wensugithub">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="携子之手,与子偕老">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数组
+        </h1>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-17 12:35:57 / 修改时间：14:13:54" itemprop="dateCreated datePublished" datetime="2021-01-17T12:35:57+09:00">2021-01-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E7%BB%84/" itemprop="url" rel="index"><span itemprop="name">数组</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <blockquote>
+<p>数组结构和算法，和语言是无关的</p>
+</blockquote>
+<ul>
+<li><p>底层数组特点</p>
+<ol>
+<li>数组中必须存放相同类型数据</li>
+<li>申请数组的内存空间时，必须指定数组大小</li>
+</ol>
+</li>
+<li><p>影响数组性能的要素</p>
+<ol>
+<li>数组扩容</li>
+<li>元素位移</li>
+</ol>
+</li>
+<li><p>数组扩容</p>
+<ol>
+<li>numA:16 ➡ 18</li>
+<li>此时底层会申请一个新的，长度扩大1倍的数组  numB:32 []</li>
+<li>将numA中的数据一个个拷贝到numB, 再依次添加17,18</li>
+<li>将numA的内存释放(free)掉</li>
+<li>java中ArrayList默认长度是10, 超出10之后继续add的话，数组扩容到15(10 + 10 &gt;&gt; 1 </li>
+<li>参考自ArrayList源码private void grow(int minCapacity)</li>
+</ol>
+</li>
+<li><p>元素位移</p>
+<ol>
+<li>在数组最前面插入元素时，元素一个个向后移动</li>
+<li>在中间或者前面插入或者删除元素性能非常低</li>
+</ol>
+</li>
+<li><p>既然有以上的缺点，为什么还要用数组</p>
+<ol>
+<li>因为在日常开发中, 数组存放到数组后，常用的是查找</li>
+<li>由于有下标, 查找的速度非常快(O(1)的性能)</li>
+</ol>
+</li>
+<li><p>JavaScript数组底层实现</p>
+<ol>
+<li><p>实际并不是数组，而是类似于hashMap</p>
+</li>
+<li><p>不同时期采用不同实现, 正靠近C的数组实现</p>
+</li>
+<li><p><a href="https://www.voidcanvas.com/javascript-array-evolution-performance/" target="_blank" rel="noopener">Diving deep into JavaScript array</a></p>
+</li>
+</ol>
+</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+        
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-12-01T19:54:28+09:00"
-              content="2020-12-01">
-          12-01
-        </time>
-      </div>
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Wen Su
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wensugithub.github.io/2021/01/17/dataStructure/" title="数组">https://wensugithub.github.io/2021/01/17/dataStructure/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/01/interview/" itemprop="url">
-            <span itemprop="name">Java面试集锦</span>
-          </a>
-      </div>
 
-    </header>
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/31/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%A7%AF%E7%B4%AF/" rel="prev" title="日常工作积累">
+      <i class="fa fa-chevron-left"></i> 日常工作积累
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -515,6 +630,25 @@ start
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'fcec4fb2828f456d6a61',
+      clientSecret: '47b03935e01128802fb1aac7d81db2f91ffeb13b',
+      repo        : 'github-pages-comments',
+      owner       : 'wensugithub',
+      admin       : ['wensugithub'],
+      id          : '5943eb9a548e7362c0af8051dc70c62e',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>

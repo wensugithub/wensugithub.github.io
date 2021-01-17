@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>数组</title>
+    <url>/2021/01/17/dataStructure/</url>
+    <content><![CDATA[<blockquote>
+<p>数组结构和算法，和语言是无关的</p>
+</blockquote>
+<ul>
+<li><p>底层数组特点</p>
+<ol>
+<li>数组中必须存放相同类型数据</li>
+<li>申请数组的内存空间时，必须指定数组大小</li>
+</ol>
+</li>
+<li><p>影响数组性能的要素</p>
+<ol>
+<li>数组扩容</li>
+<li>元素位移</li>
+</ol>
+</li>
+<li><p>数组扩容</p>
+<ol>
+<li>numA:16 ➡ 18</li>
+<li>此时底层会申请一个新的，长度扩大1倍的数组  numB:32 []</li>
+<li>将numA中的数据一个个拷贝到numB, 再依次添加17,18</li>
+<li>将numA的内存释放(free)掉</li>
+<li>java中ArrayList默认长度是10, 超出10之后继续add的话，数组扩容到15(10 + 10 &gt;&gt; 1 </li>
+<li>参考自ArrayList源码private void grow(int minCapacity)</li>
+</ol>
+</li>
+<li><p>元素位移</p>
+<ol>
+<li>在数组最前面插入元素时，元素一个个向后移动</li>
+<li>在中间或者前面插入或者删除元素性能非常低</li>
+</ol>
+</li>
+<li><p>既然有以上的缺点，为什么还要用数组</p>
+<ol>
+<li>因为在日常开发中, 数组存放到数组后，常用的是查找</li>
+<li>由于有下标, 查找的速度非常快(O(1)的性能)</li>
+</ol>
+</li>
+<li><p>JavaScript数组底层实现</p>
+<ol>
+<li><p>实际并不是数组，而是类似于hashMap</p>
+</li>
+<li><p>不同时期采用不同实现, 正靠近C的数组实现</p>
+</li>
+<li><p><a href="https://www.voidcanvas.com/javascript-array-evolution-performance/" target="_blank" rel="noopener">Diving deep into JavaScript array</a></p>
+</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+        <category>数组</category>
+      </categories>
+  </entry>
+  <entry>
     <title>日常工作积累</title>
     <url>/2020/12/31/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%A7%AF%E7%B4%AF/</url>
     <content><![CDATA[<ol>
