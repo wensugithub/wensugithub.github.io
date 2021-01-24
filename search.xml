@@ -13,7 +13,9 @@
 <li>其限制是仅允许在栈顶进行插入和删除运算</li>
 </ol>
 </li>
-<li><p>函数调用栈<br><img src="/.io//funcStack.png" alt="funcStack"></p>
+<li><p>函数调用栈</p>
+<img src="/2021/01/20/dataStructure-stack/funcStack.png" class="" title="funcStack">
+<p><img src="2021-01-20_dataStructure-stack/funcStack.png" alt="funcStack"></p>
 </li>
 </ul>
 ]]></content>
