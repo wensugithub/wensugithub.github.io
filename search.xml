@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Java面试集锦</title>
+    <url>/2020/12/01/interview/</url>
+    <content><![CDATA[<ol>
+<li>认证一般如何设计和实现的？从性能方面考虑，不应该每次都访问DB</li>
+</ol>
+<ol start="2">
+<li>如果采用Token，Token里一般都存放什么样的信息</li>
+</ol>
+<ol start="3">
+<li>mave管理项目常用命令</li>
+</ol>
+<ol start="4">
+<li>java list去除重复元素</li>
+</ol>
+<ol start="5">
+<li>Linux修改文件权限命令</li>
+</ol>
+<ol start="6">
+<li>package.json的作用</li>
+</ol>
+<ol start="7">
+<li>jvm编译 自定义一个java.lang.String可以编译并运行么</li>
+</ol>
+<ol start="8">
+<li>java Lamdar表达式的好处</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>面试</category>
+      </categories>
+  </entry>
+  <entry>
     <title>栈(Stack)</title>
     <url>/2021/01/20/dataStructure-stack/</url>
     <content><![CDATA[<blockquote>
@@ -42,7 +75,7 @@
 </ul>
 </li>
 <li><p>栈的实现</p>
-  <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 声明栈</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 栈中属性</span></span><br><span class="line">    <span class="keyword">this</span>.items = [];</span><br><span class="line">    <span class="comment">// push 添加元素到栈顶</span></span><br><span class="line">    <span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span>(<span class="params">element</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.items.push(element);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// pop 移除栈顶元素, 同时返回移除的元素</span></span><br><span class="line">    <span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.pop();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// peek 返回栈顶元素</span></span><br><span class="line">    <span class="keyword">this</span>.peek = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items[<span class="keyword">this</span>.items.length - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// isEmpty 栈里没有任何元素就返回true，否则返回false</span></span><br><span class="line">    <span class="keyword">this</span>.isEmpty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.length === <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// pop 返回栈里元素个数</span></span><br><span class="line">    <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.length;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 将栈结构的内容以字符形式返回</span></span><br><span class="line">    <span class="keyword">this</span>.toString = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 声明栈</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 栈中属性</span></span><br><span class="line">    <span class="keyword">this</span>.items = [];</span><br><span class="line">    <span class="comment">// push 添加元素到栈顶</span></span><br><span class="line">    <span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span>(<span class="params">element</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.items.push(element);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// pop 移除栈顶元素, 同时返回移除的元素</span></span><br><span class="line">    <span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.pop();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// peek 返回栈顶元素</span></span><br><span class="line">    <span class="keyword">this</span>.peek = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.isEmpty()) <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items[<span class="keyword">this</span>.items.length - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// isEmpty 栈里没有任何元素就返回true，否则返回false</span></span><br><span class="line">    <span class="keyword">this</span>.isEmpty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.length === <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// size 返回栈里元素个数</span></span><br><span class="line">    <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.length;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 将栈结构的内容以字符形式返回</span></span><br><span class="line">    <span class="keyword">this</span>.toString = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>基于实现的栈通过小程序将10进制转为2进制</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 十进制转二进制</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">DecToBin</span>(<span class="params">decNum</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> stack = <span class="keyword">new</span> Stack();</span><br><span class="line">    <span class="comment">// 依次整除2, 余数即为2进制</span></span><br><span class="line">    <span class="keyword">while</span>(decNum &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        stack.push(decNum % <span class="number">2</span>);</span><br><span class="line">        decNum = <span class="built_in">Math</span>.floor(decNum / <span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 将栈中的2进制拼接(例如 10进制4 转换后 栈中为[0,0,1])</span></span><br><span class="line">    <span class="keyword">var</span> result = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">while</span>(!stack.isEmpty()) &#123;</span><br><span class="line">        result += stack.pop();</span><br><span class="line">        <span class="comment">//debugger;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
@@ -129,36 +162,66 @@
       </categories>
   </entry>
   <entry>
-    <title>Java面试集锦</title>
-    <url>/2020/12/01/interview/</url>
-    <content><![CDATA[<ol>
-<li>认证一般如何设计和实现的？从性能方面考虑，不应该每次都访问DB</li>
+    <title>queue</title>
+    <url>/2021/01/26/queue/</url>
+    <content><![CDATA[<blockquote>
+<p>数据结构和算法，和语言是无关的</p>
+</blockquote>
+<ul>
+<li><p>队列的特点</p>
+<ol>
+<li>一种受限的线性表，先进先出(FIFO : first in first out) </li>
+<li>其限制是仅允许在表的前端进行删除  </li>
+<li>而在表的后端(rear)进行插入操作<img src="/2021/01/26/queue/queueImage.png" class="" title="queueImage">
+</li>
 </ol>
-<ol start="2">
-<li>如果采用Token，Token里一般都存放什么样的信息</li>
-</ol>
-<ol start="3">
-<li>mave管理项目常用命令</li>
-</ol>
-<ol start="4">
-<li>java list去除重复元素</li>
-</ol>
-<ol start="5">
-<li>Linux修改文件权限命令</li>
-</ol>
-<ol start="6">
-<li>package.json的作用</li>
-</ol>
-<ol start="7">
-<li>jvm编译 自定义一个java.lang.String可以编译并运行么</li>
-</ol>
-<ol start="8">
-<li>java Lamdar表达式的好处</li>
-</ol>
+</li>
+<li><p>生活中类似的队列结构</p>
+<ul>
+<li>电影院，商场甚至是厕所排队</li>
+<li>优先排队的人优先处理(买票，结账等)</li>
+</ul>
+</li>
+<li><p>打印队列</p>
+<ul>
+<li>有5份文档需要打印，这些文档会按次序放入到打印队列</li>
+<li>打印机会依次从队列中取出文档，优先放入的文档，优先被取出打印</li>
+<li>直到队列中不再有新的文档</li>
+</ul>
+</li>
+<li><p>线程队列</p>
+<ul>
+<li>在开发中，为了让任务可以并行处理，通常会开启多个线程</li>
+<li>但是，我们不能让大量的线程同时运行处理任务(占用过多资源)</li>
+<li>这个时候，如果有需要开启线程处理任务的情况，我们就会使用线程队列</li>
+<li>线程队列会依照次序来启动线程，并且处理对应的任务</li>
+</ul>
+</li>
+<li><p>队列的实现(基于数组)</p>
+<ul>
+<li><p>队列的常见操作</p>
+<ul>
+<li>enqueue(element) : 向队列尾部添加一个(或多个)新的项</li>
+<li>dequeue() : 移除队列第一(即排在队列最前面的)项，并返回被移除的元素</li>
+<li>front() : 返回队列中的第一个元素，最先被添加，也将是最先被移除的元素。但是队列不做任何变动(不移除元素，只返回元素信息。类似栈中peek)</li>
+<li>isEmpty() : 如果队列里没有任何元素就返回true，否则返回false</li>
+<li>size() : 返回队列里元素个数</li>
+</ul>
+</li>
+<li><p>队列的实现</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"> <span class="comment">// 声明队列</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Queue</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 栈中属性</span></span><br><span class="line">    <span class="keyword">this</span>.items = [];</span><br><span class="line">    <span class="comment">// enqueue 添加元素到队列尾部</span></span><br><span class="line">    <span class="keyword">this</span>.enqueue = <span class="function"><span class="keyword">function</span>(<span class="params">element</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.items.push(element);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// dequeue 移除队列第一项</span></span><br><span class="line">    <span class="keyword">this</span>.dequeue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.shift();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// front 返回队列中的第一个元素</span></span><br><span class="line">    <span class="keyword">this</span>.front = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.isEmpty()) <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// isEmpty 队列没有任何元素就返回true，否则返回false</span></span><br><span class="line">    <span class="keyword">this</span>.isEmpty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.length === <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// size 返回队列里元素个数</span></span><br><span class="line">    <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.items.length;</span><br><span class="line">    &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
+
+
+
+
+</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
-        <category>Java</category>
-        <category>面试</category>
+        <category>数据结构</category>
       </categories>
   </entry>
 </search>
